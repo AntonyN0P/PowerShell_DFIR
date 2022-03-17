@@ -5,7 +5,7 @@ Write-Host -ForegroundColor Yellow "======================="
 Write-Host -ForegroundColor Yellow "==Script By AntonyN0p=="
 Write-Host -ForegroundColor Yellow "======================="
 
-Write-Host "`r`n[+]  Hello, $UserName"
+Write-Host -ForegroundColor Yellow  "`r`n[+]  Hello, $UserName"
 Write-Host  " "
 Start-Sleep -s 1
 
@@ -32,12 +32,13 @@ else {
     Write-Host -ForegroundColor Red "`r`nEnableTranscripting is Disabled"
 }
 
-Start-Sleep -s 1
-
 if ($EnableModLogging -match 1 -or $EnableScriptBlockLogging -match 1 -or $EnableTranscripting -match 1){
-    $SuspiciousPS_event = Get-WinEvent -LogName "Microsoft-Windows-PowerShell/Operational" | select * | where {$_.Id -eq 4104 -or $_.Id -eq 4103}
-    Add-Content -Path $CurrentPath\powerShell_logs.txt -Value "$SuspiciousPS_event"
+     Write-Host -ForegroundColor Yellow "Writing to powerShell_logs.txt"
+     $SuspiciousPS_event = Get-WinEvent -LogName "Microsoft-Windows-PowerShell/Operational" | select * | where {$_.Id -eq 4104 -or $_.Id -eq 4103}
+     Add-Content -Path $CurrentPath\powerShell_logs.txt -Value $SuspiciousPS_event
 }
+
+
 #Check PowerShell history for all sessions
 Write-Host -ForegroundColor Yellow "[+]  Checking Powershell history for all session"
 $CurrentPath = pwd | Select-Object | %{$_.ProviderPath}
@@ -77,4 +78,4 @@ if (Test-Path -Path HKLM:"\SYSTEM\CurrentControlSet\Control\ComputerName\Compute
     Add-Content -Path $CurrentPath\report.txt -Value "`r`nComputer Name              : Could not find the Registry key!"
   }
 
-Write-Host -ForegroundColor Yellow 'PowerShell logs was wrote to powerShell_logs.txt'
+Write-Host -ForegroundColor Yellow "`r`nPowerShell logs was wrote to PowerShell_logs.txt"
