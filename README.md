@@ -7,6 +7,8 @@ BestPracites_Windows_Check.ps1 - check PowerShell Module Logging, ScriptBlockLog
 
 Powershell_logging_check.ps1 - collect suspicious logs (4103 & 4104) with code blocks and PowerShell history and pack to powerShell_logs.txt
 
+![PowerShell_Logging](https://user-images.githubusercontent.com/97513066/158879999-01ff7e75-9104-4cf2-90fb-efc6784b0fd1.gif)
+
 ![image](https://user-images.githubusercontent.com/97513066/158874988-655cd371-21da-416c-958e-333daa5624c8.png)
 
 Powershell_logging_check.ps1 script can help to find malicious activity:
