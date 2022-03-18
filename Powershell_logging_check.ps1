@@ -68,14 +68,4 @@ if ($HistArrayLen -lt 1) {
 Remove-Item $CurrentPath\TEMP.txt 2>&1>$null
 Remove-Item $CurrentPath\TEMP1.txt 2>&1>$null
 
-#Collect ComputerName
-Write-Host -ForegroundColor Yellow "[+]  Collecting computer name"
-if (Test-Path -Path HKLM:"\SYSTEM\CurrentControlSet\Control\ComputerName\ComputerName") {
-  $ThePCName = Get-ItemPropertyValue  HKLM:"\SYSTEM\CurrentControlSet\Control\ComputerName\ComputerName" -Name "ComputerName"
-  Add-Content -Path $CurrentPath\report.txt -Value "`r`nComputer Name              : $ThePCName"
-} else {
-    Write-Host -ForegroundColor Red "[-]  Could not find the Registry key!"
-    Add-Content -Path $CurrentPath\report.txt -Value "`r`nComputer Name              : Could not find the Registry key!"
-  }
-
 Write-Host -ForegroundColor Yellow "`r`nPowerShell logs was wrote to PowerShell_logs.txt"
