@@ -20,6 +20,7 @@ SecureBoot_checker.ps1 - check your secure boot policies for prevent bootkit/roo
 ![SecureBootCecher](https://user-images.githubusercontent.com/97513066/158877701-2e075c29-297e-40ee-899c-d6f0aa0f4a3c.JPG)
 
 Before use this script, you must install PowerShell PowerForensics module.
-FileRecoveryScript.ps1 - allow to recovery deleted files with different extenstions and size (before~4GB!), work for both resident and non-resident files.
+
+FileRecoveryScript.ps1 - allow to recover recent deleted files with different extenstions and size (before~4GB!), work for both resident and non-resident files.
 
 ![FileRecoveryScript_inaction](https://user-images.githubusercontent.com/97513066/160291854-8efe7705-27be-49f8-bae7-59e6b0fa702d.gif)
