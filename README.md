@@ -15,6 +15,10 @@ Powershell_logging_check.ps1 script can help to find malicious activity:
 
 ![image](https://user-images.githubusercontent.com/97513066/158875137-60a7413c-fb80-4b08-85eb-ef93a34f0901.png)
 
-SecureBoot_checker.ps1 - check your secure boot politics which prevent bootkit/rootkit runs.
+SecureBoot_checker.ps1 - check your secure boot policies for prevent bootkit/rootkit runs.
 
 ![SecureBootCecher](https://user-images.githubusercontent.com/97513066/158877701-2e075c29-297e-40ee-899c-d6f0aa0f4a3c.JPG)
+
+FileRecoveryScript.ps1 - allow to recovery deleted files with different extenstions and size (before~4GB!), work for both resident and non-resident files.
+
+![FileRecoveryScript_inaction](https://user-images.githubusercontent.com/97513066/160291854-8efe7705-27be-49f8-bae7-59e6b0fa702d.gif)
