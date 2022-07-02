@@ -24,3 +24,5 @@ Before use this script, you must install PowerShell PowerForensics module.
 FileRecoveryScript.ps1 - allow to recover recent deleted files with different extenstions and size (before~4GB!), work for both resident and non-resident files.
 
 ![FileRecoveryScript_inaction](https://user-images.githubusercontent.com/97513066/160291854-8efe7705-27be-49f8-bae7-59e6b0fa702d.gif)
+
+WindowsEvtxAndPrefetchFileRecovery.ps1 - Can help investigators to recover deleted Prefetch and Evtx files. Script gain information about deleted files from $mft and build them.
