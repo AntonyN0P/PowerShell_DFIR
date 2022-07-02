@@ -26,3 +26,4 @@ FileRecoveryScript.ps1 - allow to recover recent deleted files with different ex
 ![FileRecoveryScript_inaction](https://user-images.githubusercontent.com/97513066/160291854-8efe7705-27be-49f8-bae7-59e6b0fa702d.gif)
 
 WindowsEvtxAndPrefetchFileRecovery.ps1 - Can help investigators to recover deleted Prefetch and Evtx files. Script gain information about deleted files from $mft and build them.
+![WindowsEvtxAndPrefetchFileRecovery_longVersion](https://user-images.githubusercontent.com/97513066/177014770-9520ffc7-8c47-4363-8e1e-c88f7259a9c0.gif)
