@@ -21,9 +21,9 @@ SecureBoot_checker.ps1 - check your secure boot policies for prevent bootkit/roo
 
 Before use this script, you must install PowerShell PowerForensics module.
 
-FileRecoveryScript.ps1 - allow to recover recent deleted files with different extenstions and size (before~4GB!), work for both resident and non-resident files.
+RecycleBin_File_Recovery.ps1 - allow to recover recent deleted files with different extenstions and size (before~4GB!), work for both resident and non-resident files.
 
-![FileRecoveryScript_inaction](https://user-images.githubusercontent.com/97513066/160291854-8efe7705-27be-49f8-bae7-59e6b0fa702d.gif)
+![RecycleBin_File_Recovery ps1](https://github.com/AntonyN0P/PowerShell_DFIR/assets/97513066/69bd8b87-4748-48aa-9928-73ac703d8bec)
 
 WindowsEvtxAndPrefetchFileRecovery.ps1 - Can help investigators to recover deleted Prefetch and Evtx files. Script gain information about deleted files from $mft and build them.
 ![WindowsEvtxAndPrefetchFileRecovery_longVersion](https://user-images.githubusercontent.com/97513066/177014770-9520ffc7-8c47-4363-8e1e-c88f7259a9c0.gif)
